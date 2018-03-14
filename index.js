@@ -17,14 +17,25 @@ var destructivelyRemoveFirstKitten = function(name) {
 };
 
 var appendKitten = function(name) {
-  newKittens = [...kittens];
+  var newKittens = [...kittens];
   newKittens.push(name);
   return newKittens;
 };
 
 var prependKitten = function(name) {
-  newKittens = [...kittens];
+  var newKittens = [...kittens];
   newKittens.unshift(name);
   return newKittens;
 };
 
+var removeLastKitten = function() {
+  var newKittens = [...kittens];
+  newKittens.pop();
+  return newKittens;
+};
+
+var removeFirstKitten = function() {
+  var newKittens = [...kittens];
+  newKittens.shift();
+  return newKittens;
+}
